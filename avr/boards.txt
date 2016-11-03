@@ -2,104 +2,138 @@
 
 btbee.name=SeeedStudio Bluetooth Bee Standalone
 
+btbee.upload.tool=avrdude
 btbee.upload.protocol=arduino
-btbee.upload.maximum_size=14336
-btbee.upload.speed=19200
 
-btbee.bootloader.low_fuses=0xff
-btbee.bootloader.high_fuses=0xdd
-btbee.bootloader.extended_fuses=0x00
-btbee.bootloader.path=atmega
-btbee.bootloader.file=ATmegaBOOT_168_diecimila.hex
+btbee.bootloader.tool=avrdude
 btbee.bootloader.unlock_bits=0x3F
 btbee.bootloader.lock_bits=0x0F
 
-btbee.build.mcu=atmega168
-btbee.build.f_cpu=16000000L
+btbee.build.board=BTBEE
 btbee.build.core=arduino
 btbee.build.variant=eightanaloginputs
+
+btbee.upload.maximum_size=14336
+btbee.upload.maximum_data_size=1024
+btbee.upload.speed=19200
+
+btbee.bootloader.low_fuses=0xc6
+btbee.bootloader.high_fuses=0xdd
+btbee.bootloader.extended_fuses=0x00
+btbee.bootloader.file=atmega/ATmegaBOOT_168_pro_8MHz.hex
+
+btbee.build.mcu=atmega168
+btbee.build.f_cpu=8000000L
 
 ##############################################################
 
 tinyduino.name=TinyCircuits TinyDuino
 
+tinyduino.upload.tool=avrdude
 tinyduino.upload.protocol=arduino
+
+tinyduino.bootloader.tool=avrdude
+tinyduino.bootloader.unlock_bits=0x3F
+tinyduino.bootloader.lock_bits=0x0F
+
+tinyduino.build.board=TINYDUINO
+tinyduino.build.core=arduino
+tinyduino.build.variant=eightanaloginputs
+
 tinyduino.upload.maximum_size=30720
+tinyduino.upload.maximum_data_size=2048
 tinyduino.upload.speed=57600
 
 tinyduino.bootloader.low_fuses=0xFF
 tinyduino.bootloader.high_fuses=0xDA
 tinyduino.bootloader.extended_fuses=0x05
-tinyduino.bootloader.path=atmega
-tinyduino.bootloader.file=ATmegaBOOT_168_atmega328_pro_8MHz.hex
-tinyduino.bootloader.unlock_bits=0x3F
-tinyduino.bootloader.lock_bits=0x0F
+tinyduino.bootloader.file=atmega/ATmegaBOOT_168_atmega328_pro_8MHz.hex
 
 tinyduino.build.mcu=atmega328p
 tinyduino.build.f_cpu=8000000L
-tinyduino.build.core=arduino
-tinyduino.build.variant=standard
 
 ##############################################################
 
 rfbee.name=SeeedStudio RFBee
 
+rfbee.upload.tool=avrdude
 rfbee.upload.protocol=arduino
+
+rfbee.bootloader.tool=avrdude
+rfbee.bootloader.unlock_bits=0x3F
+rfbee.bootloader.lock_bits=0x0F
+
+rfbee.build.board=RFBEE
+rfbee.build.core=arduino
+rfbee.build.variant=eightanaloginputs
+
 rfbee.upload.maximum_size=14336
+rfbee.upload.maximum_data_size=1024
 rfbee.upload.speed=19200
 
 rfbee.bootloader.low_fuses=0xc6
 rfbee.bootloader.high_fuses=0xdd
 rfbee.bootloader.extended_fuses=0x00
-rfbee.bootloader.path=atmega
-rfbee.bootloader.file=ATmegaBOOT_168_pro_8MHz.hex
-rfbee.bootloader.unlock_bits=0x3F
-rfbee.bootloader.lock_bits=0x0F
+rfbee.bootloader.file=atmega/ATmegaBOOT_168_pro_8MHz.hex
 
 rfbee.build.mcu=atmega168
 rfbee.build.f_cpu=8000000L
-rfbee.build.core=arduino
-rfbee.build.variant=eightanaloginputs
 
 ##############################################################
 
 wifibee.name=SeeedStudio WifiBee
 
+wifibee.upload.tool=avrdude
 wifibee.upload.protocol=arduino
-wifibee.upload.maximum_size=30720
-wifibee.upload.speed=57600
 
+wifibee.bootloader.tool=avrdude
 wifibee.bootloader.low_fuses=0xFF
-wifibee.bootloader.high_fuses=0xDA
-wifibee.bootloader.extended_fuses=0x05
-wifibee.bootloader.path=atmega
-wifibee.bootloader.file=ATmegaBOOT_168_atmega328.hex
 wifibee.bootloader.unlock_bits=0x3F
 wifibee.bootloader.lock_bits=0x0F
 
-wifibee.build.mcu=atmega328p
 wifibee.build.f_cpu=16000000L
+wifibee.build.board=WIFIBEE
 wifibee.build.core=arduino
-wifibee.build.variant=eightanaloginputs
+wifibee.build.variant=standard
+
+wifibee.menu.cpu.atmega328=ATmega328
+
+wifibee.upload.maximum_size=30720
+wifibee.upload.maximum_data_size=2048
+wifibee.upload.speed=57600
+
+wifibee.bootloader.high_fuses=0xDA
+wifibee.bootloader.extended_fuses=0x05
+wifibee.bootloader.file=atmega/ATmegaBOOT_168_atmega328.hex
+
+wifibee.build.mcu=atmega328p
 
 ##############################################################
 
 chameleon.name=XGameStation Chameleon AVR
 
+chameleon.upload.tool=avrdude
 chameleon.upload.protocol=arduino
-chameleon.upload.maximum_size=30720
-chameleon.upload.speed=57600
 
+chameleon.bootloader.tool=avrdude
 chameleon.bootloader.low_fuses=0xFF
-chameleon.bootloader.high_fuses=0xDA
-chameleon.bootloader.extended_fuses=0x05
-chameleon.bootloader.path=atmega
-chameleon.bootloader.file=ATmegaBOOT_168_atmega328.hex
 chameleon.bootloader.unlock_bits=0x3F
 chameleon.bootloader.lock_bits=0x0F
 
-chameleon.build.mcu=atmega328p
 chameleon.build.f_cpu=16000000L
+chameleon.build.board=CHAMELEON
 chameleon.build.core=arduino
 chameleon.build.variant=standard
+
+chameleon.menu.cpu.atmega328=ATmega328
+
+chameleon.upload.maximum_size=30720
+chameleon.upload.maximum_data_size=2048
+chameleon.upload.speed=57600
+
+chameleon.bootloader.high_fuses=0xDA
+chameleon.bootloader.extended_fuses=0x05
+chameleon.bootloader.file=atmega/ATmegaBOOT_168_atmega328.hex
+
+chameleon.build.mcu=atmega328p
 
